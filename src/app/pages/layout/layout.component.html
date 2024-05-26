@@ -1,0 +1,23 @@
+<div class="header">
+  <div class="logo">
+    <p>Welcome <span> valesvojtech</span></p>
+  </div>
+  <div id="flip"><p>Menu</p></div>
+  <nav id="nav">
+    <ul>
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Plans</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+<router-outlet></router-outlet>
+<script>
+  $(document).ready(function(){
+    $("#flip").click(function(){
+      $("#nav").slideToggle(1500);
+    });
+  });
+</script>
